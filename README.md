@@ -4,7 +4,7 @@ This car was designed and built entirely from scratch over the course of just **
 
 ### Highlights:
 - ✅ Fully custom-built frame, drivetrain, and electrical systems - topspeed 40 km/h (sustained for an hour)
-- ⚙️ Sleepless nights in the shop, CAD sprints, and a whole lot of soldering
+- ⚙️ Sleepless nights in the shop, CAD sprints, and a whole lot of machining
 - 💥 Our motor controller decided to dramatically *self-destruct* during the race...
 - 🏆 ...but we still took home the **Dennis Weishar Engineering Design Award** for innovation and execution!
 

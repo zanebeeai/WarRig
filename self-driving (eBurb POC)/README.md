@@ -15,6 +15,8 @@ Using sensor data plus pre-built maps, the vehicle determines its precise pose (
 - **Trajectory planning**: computes *how* to execute that behavior (smooth path, velocity profile).  
 - **Control**: sends commands to actuators (steering, throttle, brake) to follow the planned trajectory.  
 ![External self-driving demonstration](20250612_093538.gif)
+
+
 *Above: an external view showing the full self-driving loop in action.*
 
 ## 5. Safety & Fallbacks  

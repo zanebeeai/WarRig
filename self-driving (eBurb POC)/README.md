@@ -2,9 +2,7 @@
 
 ## 1. Perception  
 The perception module processes camera data to detect road lines and environmental objects, and steer accordingly.
-![Processed front-camera output](https://imgur.com/a/XNrlmbP)
-<video src="https://i.imgur.com/Ineczy4.mp4" autoplay loop muted playsinline width="600"></video>
-![Processed front-camera output](https://i.imgur.com/Ineczy4.mp4)
+![Processed front-camera output](processed_output.gif)
 
 
 *Above: an example of processed front-camera output with object/lane overlay.*
@@ -16,7 +14,7 @@ Using sensor data plus pre-built maps, the vehicle determines its precise pose (
 - **Behavioral planning**: decides *what* the vehicle should do (e.g., steer, stop, accelerate).  
 - **Trajectory planning**: computes *how* to execute that behavior (smooth path, velocity profile).  
 - **Control**: sends commands to actuators (steering, throttle, brake) to follow the planned trajectory.  
-![External self-driving demonstration](https://i.imgur.com/qpJsv2c.gif)
+![External self-driving demonstration](20250612_093538.gif)
 *Above: an external view showing the full self-driving loop in action.*
 
 ## 5. Safety & Fallbacks  

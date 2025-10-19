@@ -2,8 +2,7 @@
 
 ## 1. Perception  
 The perception module processes sensor data (e.g., camera, LiDAR) to detect and track objects in the environment: vehicles, pedestrians, traffic signs, lanes.  
-![Processed front-camera output](https://i.imgur.com/ZfZwRAX.mp4)  
-<video src="https://i.imgur.com/ZfZwRAX.mp4" controls loop muted width="600"></video>
+![Processed front-camera output]([https://i.imgur.com/ZfZwRAX.mp4](https://i.imgur.com/Ineczy4.gif)])  
 *Above: an example of processed front-camera output with object/lane overlay.*
 
 ## 2. Localization & Mapping  

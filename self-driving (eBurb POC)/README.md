@@ -4,6 +4,8 @@
 The perception module processes camera data to detect road lines and environmental objects, and steer accordingly.
 ![Processed front-camera output](https://imgur.com/a/XNrlmbP)
 <video src="https://i.imgur.com/Ineczy4.mp4" autoplay loop muted playsinline width="600"></video>
+![Processed front-camera output](https://i.imgur.com/Ineczy4.mp4)
+
 
 *Above: an example of processed front-camera output with object/lane overlay.*
 

@@ -1,0 +1,33 @@
+run:
+  run_id_format: "YYYYMMDD_HHMMSS_trackX"
+  output_root: "data/raw_runs"
+
+cameras:
+  num_cameras: 3
+  device_indices: [0, 1, 2]
+  resolution:
+    width: 2560
+    height: 1440
+  fps_target: 30
+  backend: "CAP_DSHOW"
+  fourcc: "MJPG"
+  sync_mode: "software_best_effort"
+  frame_timestamp_source: "perf_counter_ns"
+
+arduino_serial:
+  port: "COM5"
+  baud: 115200
+  label_hz: 100
+  protocol: "json_line"
+
+safety:
+  bench_mode_required: true
+  arm_timeout_s: 3.0
+  heartbeat_hz: 10
+  killswitch_required: true
+
+calibration:
+  counts_per_rev: 1024
+  gear_ratio: 1.0
+  steering_range_deg: 50.0
+  zero_offset_counts: 0

@@ -1,0 +1,27 @@
+data:
+  dataset_id: "default_dataset"
+  split_strategy: "by_run"
+  train_runs: []
+  val_runs: []
+  test_runs: []
+
+training:
+  batch_size: 64
+  epochs: 30
+  optimizer: "adam"
+  lr: 0.0003
+  loss: "huber"
+  metrics: ["mae", "mse"]
+  early_stopping:
+    enabled: true
+    patience: 5
+  checkpointing:
+    save_best_only: true
+    monitor: "val_loss"
+  seed: 1337
+
+augmentation:
+  enabled: true
+  brightness_jitter: 0.1
+  gaussian_noise: 0.01
+  horizontal_flip: false

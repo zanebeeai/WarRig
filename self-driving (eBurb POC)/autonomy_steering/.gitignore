@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.idea/
+.vscode/
+data/raw_runs/
+data/processed/
+artifacts/
+*.mp4
+*.avi
+*.gif

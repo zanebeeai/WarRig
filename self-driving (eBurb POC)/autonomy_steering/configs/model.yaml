@@ -1,0 +1,33 @@
+input:
+  use_camera: 0
+  roi: [0, 480, 2560, 960]
+  resize_hw: [120, 160]
+  channels: 1
+  normalize: "0_1"
+
+preprocess:
+  colorspace: "gray"
+  canny:
+    enabled: true
+    low: 50
+    high: 150
+  perspective_warp:
+    enabled: false
+    src_points: []
+    dst_points: []
+  hough_debug:
+    enabled: false
+
+network:
+  type: "cnn_regression_v1"
+  conv_blocks: 3
+  filters: [24, 36, 48]
+  kernel_sizes: [[5, 5], [5, 5], [3, 3]]
+  strides: [[2, 2], [2, 2], [1, 1]]
+  dense_units: [100, 50, 10]
+  dropout: 0.2
+
+output:
+  label_type: "steering_angle_deg"
+  range_min: -25.0
+  range_max: 25.0

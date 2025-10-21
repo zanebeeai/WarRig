@@ -91,12 +91,12 @@ def build_dataset(system_cfg: str, model_cfg: str, out_id: str, runs: List[str])
     for run_id in runs:
         split = "train" if run_id in train_runs else "val" if run_id in val_runs else "test"
         writer = writers[split]
-            run_dir = Path(system["run"]["output_root"]) / run_id
-            labels_path = run_dir / "labels.csv"
-            video_path = run_dir / f"cam{model['input']['use_camera']}.mp4"
-            if not labels_path.exists() or not video_path.exists():
-                log_event(logger, "dataset", "missing_run_files", run_id=run_id)
-                continue
+        run_dir = Path(system["run"]["output_root"]) / run_id
+        labels_path = run_dir / "labels.csv"
+        video_path = run_dir / f"cam{model['input']['use_camera']}.mp4"
+        if not labels_path.exists() or not video_path.exists():
+            log_event(logger, "dataset", "missing_run_files", run_id=run_id)
+            continue
 
             labels = _load_labels(labels_path)
             cap = cv2.VideoCapture(str(video_path))
